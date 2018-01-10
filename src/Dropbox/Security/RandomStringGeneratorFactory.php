@@ -56,11 +56,6 @@ class RandomStringGeneratorFactory
      */
     protected static function defaultRandomStringGenerator()
     {
-        //Mcrypt
-        if (function_exists('mcrypt_create_iv')) {
-            return new McryptRandomStringGenerator();
-        }
-
         //OpenSSL
         if (function_exists('openssl_random_pseudo_bytes')) {
             return new OpenSslRandomStringGenerator();

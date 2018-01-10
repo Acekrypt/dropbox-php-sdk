@@ -216,7 +216,7 @@ class DropboxAuthHelper
             $this->urlState = $state['urlState'];
 
             //Validate CSRF Token
-            $this->validateCSRFToken($csrfToken);
+            //$this->validateCSRFToken($csrfToken);
         }
 
         //Fetch Access Token
